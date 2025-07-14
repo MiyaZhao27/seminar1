@@ -47,7 +47,7 @@ git config --global user.email "you@example.com"
 
 - Navigate to the folder where you would like to locate the repository on your computer with `cd` (change directory)
 
-- Then, go to the ME314 repository on Github: [https://github.com/me314-lse/lectures.git](https://github.com/me314-lse/seminar1.git)
+- Then, go to the ME314 repository on Github: [https://github.com/me314-lse/seminar1.git](https://github.com/me314-lse/seminar1.git)
 
 - On your repository page on GitHub, click on **Code** and copy the URL (https)
 
