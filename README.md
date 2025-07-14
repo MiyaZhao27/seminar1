@@ -71,10 +71,15 @@ git clone <url>
 
 ## Set Up VS Code
 
-### Installing VS Code
+### Installing VS Code and Quarto
 
 - Go to [https://code.visualstudio.com/](https://code.visualstudio.com/)
 - Select your OS
 - Follow instructions
 
+- Go to [https://quarto.org/docs/get-started/](https://quarto.org/docs/get-started/).
+- Select your OS
+- Follow the instructions
+
+  
 Now open VS Code and click on **File** → **Open…** and select the `Seminar1.qmd` file.
