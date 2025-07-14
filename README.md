@@ -1,4 +1,6 @@
-# This repository contains material and an instruction for seminar 1. 
+# Seminar 1 Materials and Instructions
+
+This repository contains all the materials for Seminar 1. You should fork it or clone it to your local drive. Below are some instructions to help us get going.
 
 ## Setting Up GitHub
 
