@@ -1,4 +1,4 @@
-This repository contains material and an instruction for seminar 1. 
+# This repository contains material and an instruction for seminar 1. 
 
 ## Setting Up GitHub
 
