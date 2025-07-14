@@ -71,7 +71,7 @@ git clone <url>
 
 - Now delete the token that you have stored.
 
-## Set Up VS Code
+## Setting Up VS Code
 
 ### Installing VS Code and Quarto
 
