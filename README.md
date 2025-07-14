@@ -73,9 +73,13 @@ git clone <url>
 
 ### Installing VS Code and Quarto
 
+**VS Code**
+
 - Go to [https://code.visualstudio.com/](https://code.visualstudio.com/)
 - Select your OS
 - Follow instructions
+
+**Quarto**
 
 - Go to [https://quarto.org/docs/get-started/](https://quarto.org/docs/get-started/).
 - Select your OS
