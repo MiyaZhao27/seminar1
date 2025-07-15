@@ -6,7 +6,7 @@ toc: true
 format: html
 execute:
   echo: true
-  eval: false
+  eval: true
 ---
 
 
@@ -35,7 +35,7 @@ GitHub provides Internet hosting for software development and _version control_ 
 * Pull request - ask changes to be merged
 * Merge - incorporate changes (then delete branch)
 
-```{bash}
+```{bash, eval=FALSE}
 git clone <url> # Download online repository to local computer
 git status      # See status of files in repository
 git add         #  Stage all changes made (alternatively add distinct file names to be staged)
@@ -73,7 +73,7 @@ Using the command line (Terminal on a Mac/Linus or PowerShell/Command Prompt on 
 
 __Note:__ In the below, you should replace `<path>` with the path to whichever  folder you would like to store your local copy of your repo. You should replace  `<url>` with the HTTPS link to your GitHub repo.
 
-```{bash}
+```{bash, eval=FALSE}
 cd <path>
 git clone <url>
 cd /path/to/directory
@@ -87,14 +87,14 @@ Now, save this Quarto file, close it, and move it into your local copy of the  G
 
 Next, stage all the files you just added to your local repo. Note: the dot tells  git to stage all the files in the folder, not just a single file. The dot can be dangerous because you may unintentionally stage files you do not want to have on  GitHub. Before staging all the files in the repo folder with the dot, check what's in the folder by running the command `ls` in the terminal and check you are only staging files you want to save to GitHub. Once you're satisfied stage as follows.
 
-```{bash}
+```{bash, eval=FALSE}
 git add .
 ```
 
 
 Commit and push your changes to your repo, using "added seminar files" as your  commit message.
 
-```{bash}
+```{bash, eval=FALSE}
 
 git commit -m "saved qmd file and csv datasets"
 git push
@@ -192,7 +192,7 @@ Check if Python and R are running:
    
 2. Then, run the following commands in the new terminal 
 
-```{bash}
+```{bash, eval=FALSE}
 
 # If you're on macOS or Linux, run:
 which python3
@@ -222,9 +222,9 @@ But we have not configured the default python environment yet. So let us do that
 
 Fill in the path to where python is stored on your machine.
 
-```{r}
+```{r, warning=FALSE}
 library(reticulate)
-use_python("YOUR_PATH_TO_PYTHON", required = TRUE) # use base Python installation
+use_python("/opt/homebrew/bin/python3", required = TRUE) # use base Python installation
 
 ```
 
@@ -237,7 +237,7 @@ print("Python code is running")
 For the first time running a R chunk, you might be asked to install the `languageserver` package. So let us install the package by running the code below. You will be asked to select a CRAN mirror which should pop up as a separate window. Select the one in UK:London.
 
 ```{r}
-install.packages("languageserver")
+#install.packages("languageserver")
 print("R code is running")
 ```
 
