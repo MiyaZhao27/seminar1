@@ -4,6 +4,7 @@ subtitle: "LSE ME314: Introduction to Data Science and Machine Learning"
 date-modified: "14 July 2025" 
 toc: true
 format: html
+jupyter: python3
 execute:
   echo: true
   eval: false
@@ -225,7 +226,7 @@ Fill in the path to where python is stored on your machine.
 
 ```{r}
 library(reticulate)
-use_python("YOUR_PATH_TO_PYTHON", required = TRUE) # use base Python installation
+use_python("C:/Users/zhaom/Documents/GitHub/ME314/venv/Scripts/python.exe", required = TRUE) # use base Python installation
 
 ```
 
@@ -279,7 +280,16 @@ Create R vectors for each data type. In a single R code chunk, write code that:
 - Creates a factor called factor_vector from the character vector c("red", "green", "blue", "green").
    
 ```{r}
-# your code goes here
+n = c(3.14, 0, Inf)
+str(n)
+l = c(TRUE, FALSE, NA)
+str(l)
+c = c( "apple", "banana", "cherry")
+str(c)
+f = c("red", "green", "blue", "green")
+f = as.factor(f)
+str(f)
+
 ```
 
 
@@ -313,7 +323,12 @@ In a single Python code cell, write a code that:
 
 Then print out the type of each variable using type().
 ```{python}
-# your code goes here
+f = 3.14
+type(f)
+i = 42
+type(i)
+s = "hello world"
+type(s)
 ```
 
 
@@ -385,11 +400,24 @@ print(is_prime(2))
 Create a function called square(x) that returns $x \times x$. You may write it in R or Python. Then test your function on at least two values (e.g. 4 and 1.5) and print the results.
 
 ```{r}
-# your code goes here
+square = function(x) {
+  x *x
+}
+
+square(4)
+square(1.5)
 ```
 
 ```{python}
-# your code goes here
+def square(x):
+  return x*x
+
+square(4)
+```
+
+```{python}
+square(1.5)
+
 ```
 
 __Control Flow:__
@@ -421,7 +449,14 @@ __Indentation:__ Unlike in R, where we are using curly and round brackets to str
 Translate the if condition above into Python code using indentation.
 
 ```{python, eval=FALSE}
-# your code goes here
+x = 4
+
+if (x>2):
+  x = x+1
+  print(x)
+else:
+  print(x-1)
+
 ```
 
 
@@ -476,7 +511,12 @@ Use a ``for`` loop in Python to output the following:
 ```
 
 ```{python, eval=FALSE}
-# your code goes here
+
+set = ([1,2,3,4,5])
+
+for i in set:
+  print((str(i) + '') *i)
+
 ```
 
 
@@ -493,7 +533,15 @@ Use a ``for`` loop in R to output the following:
 ```
 
 ```{r, eval=FALSE}
-# your code goes here
+
+list = numeric(0)
+
+for (i in seq(0, 5)) {
+  list[i] = i
+}
+
+list
+
 ```
 
 

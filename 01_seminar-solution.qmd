@@ -222,7 +222,7 @@ But we have not configured the default python environment yet. So let us do that
 
 Fill in the path to where python is stored on your machine.
 
-```{r, warning=FALSE}
+```{r, warning=FALSE, eval=FALSE}
 library(reticulate)
 use_python("/opt/homebrew/bin/python3", required = TRUE) # use base Python installation
 
